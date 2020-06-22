@@ -10,6 +10,7 @@ const app = express();
 // };
 
 app.use(cors());
+app.options('*', cors()); // include before other routes for preflight checks
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
@@ -23,7 +24,7 @@ app.get('*', (req, res) => {
 })
 
 // set port, listen for requests
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
