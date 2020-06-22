@@ -1,25 +1,26 @@
-import React, { useEffect } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import HomeLogo from "../assets/Img/LOGO.png";
+import { Link } from "react-router-dom";
 
-import { fetchTexts } from '../actions/textsActions'
-
-const HomePage = ({ dispatch, texts }) => {
-  useEffect(() => {
-    dispatch(fetchTexts())
-  }, [dispatch])
-
-  return (  <section className="homeSection">
-      <div className="center">
-        <h1>{texts}</h1>      
+class HomePage extends Component {
+  render() {
+    const pageType = "Home";
+    return (
+      <div className="Page">
+        <Navbar pageType={pageType} />
+        <div className="HomeSection">
+          <div className="Logo1Div">
+            <Link to="/About">
+              <img src={HomeLogo} alt="logo" class="Logo1Style" />
+            </Link>
+          </div>
+        </div>
+        <Footer pageType={pageType} />
       </div>
-      <h2 className="center">This is the dashboard.</h2>
-    </section>
-  )
+    );
+  }
 }
 
-const mapStateToProps = state => ({
-  texts: state.texts.texts,
-})
-
-export default connect(mapStateToProps)(HomePage)
-
+export default HomePage;

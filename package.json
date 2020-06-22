@@ -5,14 +5,24 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@types/react-transition-group": "^4.4.0",
+    "font-awesome": "^4.7.0",
+    "mdbreact": "^4.27.0",
     "react": "16.12.0",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "16.12.0",
     "react-redux": "7.2.0",
     "react-router-dom": "5.1.2",
     "react-scripts": "^3.4.1",
+    "react-transition-group": "4.4.1",
     "redux": "4.0.5",
     "redux-devtools-extension": "2.13.8",
-    "redux-thunk": "2.3.0"
+    "redux-thunk": "2.3.0",
+    "social-media-icons-react": "^1.0.10"
   },
   "devDependencies": {
     "typescript": "3.3.3"

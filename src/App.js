@@ -1,32 +1,34 @@
-import React from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from 'react-router-dom'
+import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-import { Navbar } from './components/Navbar'
-import HomePage from './pages/HomePage'
-import PurposePage from './pages/PurposePage'
-import ProductPage from './pages/ProductPage'
-import PartnersPage from './pages/PartnersPage'
-import TeamSupport from './pages/TeamSupport'
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import BookPage from "./pages/BookPage";
+import ContactPage from "./pages/ContactPage";
+import LandingPage from "./pages/LandingPage";
+import "./App.css";
 
-const App = () => {
-  return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/purpose" component={PurposePage} />
-        <Route exact path="/product" component={ProductPage} />
-        <Route exact path="/partners" component={PartnersPage} />
-        <Route exact path="/team_support" component={TeamSupport} />
-        <Redirect to="/" />
-      </Switch>
-    </Router>
-  )
+class App extends Component {
+  render() {
+    return (
+      <Route
+        render={({ location }) => (
+          <TransitionGroup>
+            <CSSTransition key={location.key} timeout={300} classNames="fade">
+              <Switch location={location}>
+                <Route exact path="/" component={LandingPage} />
+                <Route exact path="/Home" component={HomePage} />
+                <Route exact path="/About" component={AboutPage} />
+                <Route exact path="/Book" component={BookPage} />
+                <Route exact path="/Contact" component={ContactPage} />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        )}
+      />
+    );
+  }
 }
 
-export default App
+export default App;
