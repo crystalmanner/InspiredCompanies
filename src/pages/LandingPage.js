@@ -8,6 +8,7 @@ class LandingPage extends Component {
   };
 
   componentDidMount() {
+    document.title = "Inspired Companies | International Advisory";
     this.id = setTimeout(() => this.setState({ redirect: true }), 5000);
   }
 
@@ -17,16 +18,20 @@ class LandingPage extends Component {
 
   render() {
     if (this.state.redirect) {
-      return <Redirect to="/Home" />;
+      return <Redirect to="/home" />;
     } else {
       return (
-        <div class="CenterScreen fontSizeForL1">
-          <Link
-            to="/Home"
-            style={{ color: "rgb(3, 51, 76)", textDecoration: "none" }}
-          >
-            <h1>BECOME A COMPANY THE WORLD WILL GET BEHIND</h1>
-          </Link>
+        <div>
+          <div class="CenterScreen fontSizeForL1">
+            <Link
+              to="/home"
+              style={{ color: "rgb(3, 51, 76)", textDecoration: "none" }}
+            >
+              <label style={{ fontSize: "53px", marginBottom: "0px" }}>
+                BECOME A COMPANY THE WORLD WILL GET BEHIND
+              </label>
+            </Link>
+          </div>
         </div>
       );
     }

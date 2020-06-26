@@ -38,7 +38,6 @@
 }
 
 .Page {
-  position: absolute;
   top: 0px;
   left: 0;
   right: 0;
@@ -52,7 +51,7 @@
 .fade-appear-active,
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 150ms linear 150ms;
+  transition: opacity 600ms ease-in;
 }
 
 .fade-exit {
@@ -61,5 +60,16 @@
 
 .fade-exit.fade-exit-active {
   opacity: 0;
-  transition: opacity 150ms linear;
+  transition: opacity 300ms ease-in;
+}
+
+.transition-group {
+  position: relative;
+}
+.route-section {
+  position: absolute;
+  min-width: 100%;
+  padding: 0px;
+  top: 0;
+  left: 0;
 }

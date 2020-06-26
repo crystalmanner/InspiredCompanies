@@ -19,35 +19,50 @@ const Navbar = ({ pageType }) => {
     <nav className={navType}>
       <section>
         <div className="navBarDisplay">
-          <div className={pageType === "Home" ? "navItemDiv" : ""}>
+          <div className="navItemDiv">
             <Link
-              to="/About"
-              className={navLinkType}
-              style={{
-                textDecoration: navType === "navAbout" ? "underline" : "none",
-              }}
+              to="/about"
+              className={
+                pageType === "Home"
+                  ? "navAnimationItem1 " + navLinkType
+                  : pageType === "About"
+                  ? "navAnimationItemStatic1 " + navLinkType
+                  : pageType === "Book"
+                  ? "navAnimationItem3 " + navLinkType
+                  : "navAnimationItem2 " + navLinkType
+              }
             >
               ABOUT
             </Link>
           </div>
-          <div className={pageType === "Home" ? "navItemDiv" : ""}>
+          <div className="navItemDiv">
             <Link
-              to="/Book"
-              className={navLinkType}
-              style={{
-                textDecoration: navType === "navBook" ? "underline" : "none",
-              }}
+              to="/the-book"
+              className={
+                pageType === "Home"
+                  ? "navAnimationItem1 " + navLinkType
+                  : pageType === "About"
+                  ? "navAnimationItem1 " + navLinkType
+                  : pageType === "Book"
+                  ? "navAnimationItemStatic3 " + navLinkType
+                  : "navAnimationItem2 " + navLinkType
+              }
             >
               THE BOOK
             </Link>
           </div>
-          <div className={pageType === "Home" ? "navItemDiv" : ""}>
+          <div className="navItemDiv">
             <Link
-              to="/Contact"
-              className={navLinkType}
-              style={{
-                textDecoration: navType === "navContact" ? "underline" : "none",
-              }}
+              to="/contact"
+              className={
+                pageType === "Home"
+                  ? "navAnimationItem1 " + navLinkType
+                  : pageType === "About"
+                  ? "navAnimationItem1 " + navLinkType
+                  : pageType === "Book"
+                  ? "navAnimationItem3 " + navLinkType
+                  : "navAnimationItemStatic2 " + navLinkType
+              }
             >
               CONTACT
             </Link>

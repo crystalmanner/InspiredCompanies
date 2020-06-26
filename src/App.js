@@ -14,15 +14,17 @@ class App extends Component {
     return (
       <Route
         render={({ location }) => (
-          <TransitionGroup>
-            <CSSTransition key={location.key} timeout={300} classNames="fade">
-              <Switch location={location}>
-                <Route exact path="/" component={LandingPage} />
-                <Route exact path="/Home" component={HomePage} />
-                <Route exact path="/About" component={AboutPage} />
-                <Route exact path="/Book" component={BookPage} />
-                <Route exact path="/Contact" component={ContactPage} />
-              </Switch>
+          <TransitionGroup className="transition-group">
+            <CSSTransition key={location.key} timeout={600} classNames="fade">
+              <section className="route-section">
+                <Switch location={location}>
+                  <Route exact path="/" component={LandingPage} />
+                  <Route exact path="/home" component={HomePage} />
+                  <Route exact path="/about" component={AboutPage} />
+                  <Route exact path="/the-book" component={BookPage} />
+                  <Route exact path="/contact" component={ContactPage} />
+                </Switch>
+              </section>
             </CSSTransition>
           </TransitionGroup>
         )}
