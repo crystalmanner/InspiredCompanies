@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.c13068ec.chunk.css",
-    "main.js": "/static/js/main.77fd04ed.chunk.js",
-    "main.js.map": "/static/js/main.77fd04ed.chunk.js.map",
+    "main.css": "/static/css/main.f4e0fed2.chunk.css",
+    "main.js": "/static/js/main.0bda19e9.chunk.js",
+    "main.js.map": "/static/js/main.0bda19e9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.74740e70.js",
     "runtime-main.js.map": "/static/js/runtime-main.74740e70.js.map",
     "static/css/2.e6f51e71.chunk.css": "/static/css/2.e6f51e71.chunk.css",
-    "static/js/2.a4b55199.chunk.js": "/static/js/2.a4b55199.chunk.js",
-    "static/js/2.a4b55199.chunk.js.map": "/static/js/2.a4b55199.chunk.js.map",
+    "static/js/2.1d1e8808.chunk.js": "/static/js/2.1d1e8808.chunk.js",
+    "static/js/2.1d1e8808.chunk.js.map": "/static/js/2.1d1e8808.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0b61cc639d5da3518546fd12830e4b28.js": "/precache-manifest.0b61cc639d5da3518546fd12830e4b28.js",
+    "precache-manifest.dbb9c9905ed62e6ad1c78d9f32c44a5d.js": "/precache-manifest.dbb9c9905ed62e6ad1c78d9f32c44a5d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.e6f51e71.chunk.css.map": "/static/css/2.e6f51e71.chunk.css.map",
-    "static/css/main.c13068ec.chunk.css.map": "/static/css/main.c13068ec.chunk.css.map",
-    "static/js/2.a4b55199.chunk.js.LICENSE.txt": "/static/js/2.a4b55199.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/CircularStd-Bold.6baed2bf.otf",
+    "static/css/main.f4e0fed2.chunk.css.map": "/static/css/main.f4e0fed2.chunk.css.map",
+    "static/js/2.1d1e8808.chunk.js.LICENSE.txt": "/static/js/2.1d1e8808.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/lineto-circular-book.c541f8e1.eot",
     "static/media/Inspired_INC_PDF_Final.pdf": "/static/media/Inspired_INC_PDF_Final.448f9f28.pdf",
     "static/media/LOGO.png": "/static/media/LOGO.6e3494c6.png",
     "static/media/LOGO1.png": "/static/media/LOGO1.42048ac5.png",
-    "static/media/book.png": "/static/media/book.5eb7061d.png",
+    "static/media/book.png": "/static/media/book.c934bd81.png",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.74740e70.js",
     "static/css/2.e6f51e71.chunk.css",
-    "static/js/2.a4b55199.chunk.js",
-    "static/css/main.c13068ec.chunk.css",
-    "static/js/main.77fd04ed.chunk.js"
+    "static/js/2.1d1e8808.chunk.js",
+    "static/css/main.f4e0fed2.chunk.css",
+    "static/js/main.0bda19e9.chunk.js"
   ]
 }
