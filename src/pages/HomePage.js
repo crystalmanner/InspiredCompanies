@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import HomeLogo from "../assets/Img/LOGO.png";
+import HomeLogo from "../assets/Img/homelogo.png";
 import { Link } from "react-router-dom";
 
 class HomePage extends Component {

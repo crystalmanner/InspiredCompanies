@@ -17,7 +17,7 @@ const Navbar = ({ pageType }) => {
 
   return (
     <nav className={navType}>
-      <section>
+      <section style={{ padding: "0px" }}>
         <div className="navBarDisplay">
           <div className="navItemDiv">
             <Link

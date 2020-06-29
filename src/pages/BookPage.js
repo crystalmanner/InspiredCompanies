@@ -19,9 +19,10 @@ class BookPage extends Component {
             <Row style={{ marginLeft: "0px", marginRight: "0px" }}>
               <Col
                 lg={{ span: 7, offset: 0 }}
-                md={{ span: 6, offset: 0 }}
+                md={{ span: 7, offset: 0 }}
                 sm={{ span: 10, offset: 1 }}
-                xs={{ span: 10, offset: 1 }}
+                xs={{ span: 12, offset: 0 }}
+                className="BookImageStyle"
               >
                 <img
                   src={BookLogo}
@@ -30,13 +31,13 @@ class BookPage extends Component {
                 />
               </Col>
               <Col
-                lg={{ span: 5 }}
-                md={{ span: 6, offset: 0 }}
+                lg={{ span: 5, offset: 0 }}
+                md={{ span: 5, offset: 0 }}
                 sm={{ span: 10, offset: 1 }}
-                xs={{ span: 10, offset: 1 }}
+                xs={{ span: 12, offset: 0 }}
                 className="bookParagraphDivStyle"
               >
-                <div class="BookTextStyle" style={{ minWidth: "348px" }}>
+                <div class="BookTextStyle">
                   <div>
                     <p style={{ fontSize: "25px" }}>INSPIRED INC.</p>
                     <p class="bookParagraphStyle" style={{ fontSize: "13px" }}>

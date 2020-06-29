@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Row, Col, Container } from "react-bootstrap";
-import ContactLogo from "../assets/Img/LOGO1.png";
+import ContactLogo from "../assets/Img/contactlogo.png";
 import "../../node_modules/font-awesome/css/font-awesome.min.css";
 import http from "../http-common";
 
@@ -53,7 +53,7 @@ class ContactPage extends Component {
   render() {
     const pageType = "Contact";
     return (
-      <div className="Page">
+      <div className="Page" style={{ display: "grid" }}>
         <Navbar pageType={pageType} />
         <div className="ContactSection">
           <Container>
@@ -62,113 +62,120 @@ class ContactPage extends Component {
                 lg={{ span: 6, offset: 3 }}
                 md={{ span: 8, offset: 2 }}
                 sm={{ span: 10, offset: 1 }}
-                xs={{ span: 10, offset: 1 }}
+                xs={{ span: 12, offset: 0 }}
               >
                 <div
                   style={{
-                    marginBottom: "25px",
-                    textAlign: "center",
-                    alignItems: "center",
+                    display: "flex",
+                    flexDirection: "column",
                     justifyContent: "center",
-                  }}
-                >
-                  <img src={ContactLogo} alt="logo" class="Logo1Style" />
-                </div>
-                <div
-                  style={{
+                    alignItems: "center",
                     textAlign: "center",
-                    color: "rgb(255,255,255)",
-                    marginLeft: "40px",
-                    marginRight: "40px",
                   }}
                 >
-                  <p
+                  <div
                     style={{
-                      fontSize: "16px",
+                      marginBottom: "25px",
                     }}
                   >
-                    We’d love to hear from you Email:&nbsp;
-                    <a
-                      class="contactUnderlineTextStyle"
-                      href="mailto:hello@inspiredcompanies.global"
-                      rel="noopener noreferrer"
-                    >
-                      hello@inspiredcompanies.global
-                    </a>
-                  </p>
-                  <p style={{ marginBottom: "2rem", fontSize: "16px" }}>
-                    We have a globally networked team to support your journey to
-                    becoming an Inspired Company -{" "}
-                    <a
-                      class="contactUnderlineTextStyle"
-                      href="mailto:donette@inspiredcompanies.global"
-                      rel="noopener noreferrer"
-                    >
-                      Advisory
-                    </a>
-                  </p>
-                  <p
+                    <img src={ContactLogo} alt="logo" class="Logo1Style" />
+                  </div>
+                  <div
                     style={{
-                      fontSize: "16px",
+                      color: "rgb(255,255,255)",
+                      marginLeft: "40px",
+                      marginRight: "40px",
                     }}
                   >
-                    Our message has a way of cutting through. Contact us for{" "}
-                    <a
-                      class="contactUnderlineTextStyle"
-                      href="mailto:donette@inspiredcompanies.global"
-                      rel="noopener noreferrer"
+                    <p
+                      style={{
+                        fontSize: "16px",
+                      }}
                     >
-                      speaking engagements.
-                    </a>
-                  </p>
-                  <p
+                      We’d love to hear from you Email:&nbsp;
+                      <a
+                        class="contactUnderlineTextStyle"
+                        href="mailto:hello@inspiredcompanies.global"
+                        rel="noopener noreferrer"
+                      >
+                        hello@inspiredcompanies.global
+                      </a>
+                    </p>
+                    <p style={{ marginBottom: "2rem", fontSize: "16px" }}>
+                      We have a globally networked team to support your journey
+                      to becoming an Inspired Company -{" "}
+                      <a
+                        class="contactUnderlineTextStyle"
+                        href="mailto:donette@inspiredcompanies.global"
+                        rel="noopener noreferrer"
+                      >
+                        Advisory
+                      </a>
+                    </p>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                      }}
+                    >
+                      Our message has a way of cutting through. Contact us for{" "}
+                      <a
+                        class="contactUnderlineTextStyle"
+                        href="mailto:donette@inspiredcompanies.global"
+                        rel="noopener noreferrer"
+                      >
+                        speaking engagements.
+                      </a>
+                    </p>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                      }}
+                    >
+                      Join the community / sign up to receive updates and
+                      insights.
+                    </p>
+                  </div>
+
+                  <div
                     style={{
-                      fontSize: "16px",
+                      minWidth: "260px",
+                      width: "80%",
+                      display: "flex",
+                      flexDirection: "row",
+                      margin: "20px 40px 5px 40px",
                     }}
                   >
-                    Join the community / sign up to receive updates and
-                    insights.
-                  </p>
+                    <div class="contactInputDivStyle">
+                      <input
+                        style={{
+                          border: "none",
+                          color: "rgb(40, 184, 211)",
+                          padding: "20px 15px",
+                          width: "100%",
+                          height: "100%",
+                          fontSize: "14px",
+                        }}
+                        id="Email"
+                        type="text"
+                        value={this.state.emailAddress}
+                        onBlur={this.onBlurEvent}
+                        onFocus={this.onFocusEvent}
+                        onChange={this.addressChange}
+                      />
+                    </div>
+                    <div class="contantBtnStyle" onClick={this.savemaildata}>
+                      <i
+                        class="fa fa-angle-right"
+                        style={{ color: "rgb(255,255,255)" }}
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
                 </div>
 
                 <div
                   style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "20px 40px 5px 40px",
-                  }}
-                >
-                  <div class="contactInputDivStyle">
-                    <input
-                      style={{
-                        border: "none",
-                        color: "rgb(40, 184, 211)",
-                        padding: "20px 15px",
-                        width: "100%",
-                        height: "100%",
-                        fontSize: "14px",
-                      }}
-                      id="Email"
-                      type="text"
-                      value={this.state.emailAddress}
-                      onBlur={this.onBlurEvent}
-                      onFocus={this.onFocusEvent}
-                      onChange={this.addressChange}
-                    />
-                  </div>
-                  <div class="contantBtnStyle" onClick={this.savemaildata}>
-                    <i
-                      class="fa fa-angle-right"
-                      style={{ color: "rgb(255,255,255)" }}
-                      aria-hidden="true"
-                    ></i>
-                  </div>
-                </div>
-                <div
-                  style={{
-                    margin: "0px 40px 10px 40px",
+                    margin: "0px 45px 10px 45px",
                     fontSize: "16px",
                     color: "rgb(3, 51, 76)",
                   }}

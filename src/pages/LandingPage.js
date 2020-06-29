@@ -27,7 +27,7 @@ class LandingPage extends Component {
               to="/home"
               style={{ color: "rgb(3, 51, 76)", textDecoration: "none" }}
             >
-              <label style={{ fontSize: "53px", marginBottom: "0px" }}>
+              <label style={{ marginBottom: "0px" }}>
                 BECOME A COMPANY THE WORLD WILL GET BEHIND
               </label>
             </Link>
