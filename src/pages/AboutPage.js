@@ -12,17 +12,7 @@ class AboutPage extends Component {
       <div className="Page">
         <Navbar pageType={pageType} />
         <div className="AboutSection">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "80%",
-              height: "60%",
-              justifyContent: "center",
-              textAlign: "center",
-              alignItems: "center",
-            }}
-          >
+          <div className="justifySectionForAbout">
             <iframe
               src="https://player.vimeo.com/video/428517508?color=ffffff&title=0&byline=0&portrait=0"
               frameborder="0"
@@ -30,6 +20,7 @@ class AboutPage extends Component {
               allowfullscreen
               width="100%"
               height="100%"
+              style={{ maxHeight: "510px" }}
             ></iframe>
             {/* <p style={{ color: "rgb(255,255,255)" }}>
               <a

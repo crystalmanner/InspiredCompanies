@@ -14,7 +14,7 @@ nav {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 100px;
 }
 
 nav section {
@@ -109,13 +109,11 @@ html {
   text-align: center;
 }
 .Logo1Style {
-  width: 90%;
-  padding: 0% 5%;
+  width: 100%;
 }
 @media (max-width: 575px) {
   .Logo1Style {
     width: 100%;
-    padding: 0% 10%;
   }
 }
 
@@ -182,10 +180,11 @@ html {
 
 .CenterScreen {
   width: 400px;
+  height: 320px;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -170px;
+  margin-top: -160px;
   margin-left: -200px;
   text-align: center;
 }
@@ -198,12 +197,7 @@ html {
 @media (max-width: 399px) {
   .CenterScreen {
     width: 100%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -170px;
     margin-left: -50%;
-    text-align: center;
   }
   .fontSizeForL1 {
     font-size: 46px;
@@ -428,7 +422,7 @@ html {
 .AboutFooterDiv {
   display: flex;
   text-align: center;
-  height: 120px;
+  height: 100px;
   justify-content: center;
   /* align-items: center; */
   background-image: url("./assets/Img/BG.png");
@@ -437,7 +431,7 @@ html {
 .BookFooterDiv {
   display: flex;
   text-align: center;
-  height: 120px;
+  height: 100px;
   justify-content: center;
   /* align-items: center; */
   justify-content: center;
@@ -446,7 +440,7 @@ html {
 .ContactFooterDiv {
   display: flex;
   text-align: center;
-  height: 120px;
+  height: 100px;
   justify-content: center;
   /* align-items: center; */
   justify-content: center;
@@ -490,7 +484,8 @@ input:focus {
 }
 
 .footerContainerForDesktop {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .bookParagraphStyle {
@@ -528,17 +523,17 @@ input:focus {
   border-radius: 10px;
   border: none;
   background-color: rgb(40, 184, 211);
-  font-size: 12px;
-  padding: 10px;
-  width: 150px;
-  margin: 10px;
+  font-size: 15px;
+  padding: 15px 10px;
+  width: 165px;
+  margin-right: 18px;
+  margin-bottom: 10px;
 }
 
 .bookButtonDivStyle {
   margin-top: 20px;
   display: flex;
-  justify-content: center;
-  padding: 0px, 5px;
+  justify-content: left;
 }
 
 .bookButtonStyle,
@@ -560,6 +555,54 @@ input:focus {
   height: 40px;
 }
 
+.justifySectionForAbout {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 5%;
+
+  display: flex;
+}
+
+.justifySectionForBook {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0px;
+  margin-left: -45px;
+
+  display: flex;
+}
+
+.justifySectionForContact {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 5%;
+
+  display: flex;
+}
+.BookContainerStyle {
+  height: 100%;
+}
+.ContactContainerStyle {
+  height: 100%;
+}
+
+.ContactColStyle {
+  min-width: 460px;
+}
+
+.ContactTextFont {
+  font-size: 16px;
+}
+
+.ContactLogoStyle {
+  margin-bottom: 20px;
+}
 @media (max-width: 767px) {
   .footerFontSize {
     font-size: 15px;
@@ -582,7 +625,8 @@ input:focus {
   }
 
   .bookButtonStyle {
-    width: calc(100% - 20px);
+    width: 100%;
+    padding: 10px;
   }
 
   .bookButtonDivStyle {
@@ -601,6 +645,27 @@ input:focus {
   .BookImageStyle {
     padding: 0% 10%;
   }
+
+  .justifySectionForBook {
+    margin-left: 0px;
+    padding: 50px 0px;
+  }
+  .justifySectionForAbout {
+    padding: 50px 5%;
+  }
+  .ContactColStyle {
+    min-width: auto;
+    max-width: 385px;
+  }
+  .ContactTextFont {
+    font-size: 17px;
+  }
+  .ContactRowStyle {
+    justify-content: center;
+  }
+  .ContactLogoStyle {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 575px) {
   .BookImageStyle {
@@ -613,9 +678,26 @@ input:focus {
   }
 }
 
+@media (max-width: 429px) {
+  .footerFontSize {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@media (max-width: 389px) {
+  .footerFontSize {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   .BookContainerStyle {
     max-width: 780px;
+    max-height: 510px;
+  }
+  .ContactContainerStyle {
+    max-height: 510px;
   }
 }
 

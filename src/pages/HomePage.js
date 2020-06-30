@@ -15,7 +15,10 @@ class HomePage extends Component {
         <Navbar pageType={pageType} />
         <div className="HomeSection">
           {/* <div className="Logo1Div"> */}
-          <Link to="/about" style={{ textAlign: "center" }}>
+          <Link
+            to="/about"
+            style={{ textAlign: "center", margin: "0px 15px 0px 15px" }}
+          >
             <img src={HomeLogo} alt="logo" class="Logo1Style" />
           </Link>
         </div>

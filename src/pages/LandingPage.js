@@ -25,9 +25,14 @@ class LandingPage extends Component {
           <div class="CenterScreen fontSizeForL1">
             <Link
               to="/home"
-              style={{ color: "rgb(3, 51, 76)", textDecoration: "none" }}
+              style={{
+                color: "rgb(3, 51, 76)",
+                textDecoration: "none",
+              }}
             >
-              <label style={{ marginBottom: "0px" }}>
+              <label
+                style={{ marginBottom: "0px", width: "100%", height: "100%" }}
+              >
                 BECOME A COMPANY THE WORLD WILL GET BEHIND
               </label>
             </Link>

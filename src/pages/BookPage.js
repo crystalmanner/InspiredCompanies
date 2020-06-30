@@ -15,117 +15,129 @@ class BookPage extends Component {
       <div className="Page">
         <Navbar pageType={pageType} />
         <div className="BookSection">
-          <Container className="BookContainerStyle">
-            <Row style={{ marginLeft: "0px", marginRight: "0px" }}>
-              <Col
-                lg={{ span: 7, offset: 0 }}
-                md={{ span: 7, offset: 0 }}
-                sm={{ span: 10, offset: 1 }}
-                xs={{ span: 12, offset: 0 }}
-                className="BookImageStyle"
+          <div className="justifySectionForBook">
+            <Container className="BookContainerStyle">
+              <Row
+                style={{
+                  marginLeft: "0px",
+                  marginRight: "0px",
+                  height: "100%",
+                }}
               >
-                <img
-                  src={BookLogo}
-                  style={{ width: "100%", height: "100%" }}
-                  alt="Book_Image"
-                />
-              </Col>
-              <Col
-                lg={{ span: 5, offset: 0 }}
-                md={{ span: 5, offset: 0 }}
-                sm={{ span: 10, offset: 1 }}
-                xs={{ span: 12, offset: 0 }}
-                className="bookParagraphDivStyle"
-              >
-                <div class="BookTextStyle">
-                  <div>
-                    <p style={{ fontSize: "25px" }}>INSPIRED INC.</p>
-                    <p class="bookParagraphStyle" style={{ fontSize: "13px" }}>
-                      by LISA MacCALLUM, EMILY BREW, NICOLE HOWSON
-                    </p>
-                    <p class="bookParagraphStyle">
-                      Most companies are only a tweet or YouTube upload from
-                      chaos. More People than ever are influencing the success
-                      of failure of your business, and traditional business
-                      leaders aren't the only ones in charge anymore. Meet the{" "}
-                      <label
-                        style={{
-                          fontStyle: "italic",
-                          marginBottom: "0px",
-                          fontSize: "14px",
-                          fontWeight: "bold",
-                        }}
+                <Col
+                  lg={{ span: 7, offset: 0 }}
+                  md={{ span: 7, offset: 0 }}
+                  sm={{ span: 10, offset: 1 }}
+                  xs={{ span: 12, offset: 0 }}
+                  className="BookImageStyle"
+                  style={{ height: "100%" }}
+                >
+                  <img
+                    src={BookLogo}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="Book_Image"
+                  />
+                </Col>
+                <Col
+                  lg={{ span: 5, offset: 0 }}
+                  md={{ span: 5, offset: 0 }}
+                  sm={{ span: 10, offset: 1 }}
+                  xs={{ span: 12, offset: 0 }}
+                  className="bookParagraphDivStyle"
+                >
+                  <div class="BookTextStyle">
+                    <div>
+                      <p style={{ fontSize: "25px" }}>INSPIRED INC.</p>
+                      <p
+                        class="bookParagraphStyle"
+                        style={{ fontSize: "13px" }}
                       >
-                        new C.E.Os:
-                      </label>{" "}
-                      the{" "}
-                      <label
-                        style={{
-                          marginBottom: "0px",
-                          fontSize: "14px",
-                          fontWeight: "bold",
-                        }}
+                        by LISA MacCALLUM, EMILY BREW, NICOLE HOWSON
+                      </p>
+                      <p class="bookParagraphStyle">
+                        Most companies are only a tweet or YouTube upload from
+                        chaos. More People than ever are influencing the success
+                        of failure of your business, and traditional business
+                        leaders aren't the only ones in charge anymore. Meet the{" "}
+                        <label
+                          style={{
+                            fontStyle: "italic",
+                            marginBottom: "0px",
+                            fontSize: "14px",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          new C.E.Os:
+                        </label>{" "}
+                        the{" "}
+                        <label
+                          style={{
+                            marginBottom: "0px",
+                            fontSize: "14px",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          C
+                        </label>
+                        ustomers, Employees and{" "}
+                        <label
+                          style={{
+                            fontStyle: "italic",
+                            marginBottom: "0px",
+                            fontSize: "14px",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          Outsiders
+                        </label>{" "}
+                        who can make or break your company faster than ever.{" "}
+                        <label
+                          style={{
+                            fontStyle: "italic",
+                            marginBottom: "0px",
+                            fontSize: "14px",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          Inspired INC.
+                        </label>{" "}
+                        is an indispensable roadmap to getting them onside.
+                      </p>
+                    </div>
+                    <div class="bookButtonDivStyle">
+                      <a
+                        href="https://www.bookdepository.com/Inspired-INC-Lisa-MacCallum/9781912892136?ref=grid-view&qid=1592729000478&sr=1-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        C
-                      </label>
-                      ustomers, Employees and{" "}
-                      <label
-                        style={{
-                          fontStyle: "italic",
-                          marginBottom: "0px",
-                          fontSize: "14px",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Outsiders
-                      </label>{" "}
-                      who can make or break your company faster than ever.{" "}
-                      <label
-                        style={{
-                          fontStyle: "italic",
-                          marginBottom: "0px",
-                          fontSize: "14px",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Inspired INC.
-                      </label>{" "}
-                      is an indispensable roadmap to getting them onside.
-                    </p>
-                  </div>
-                  <div class="bookButtonDivStyle">
-                    <a
-                      href="https://www.bookdepository.com/Inspired-INC-Lisa-MacCallum/9781912892136?ref=grid-view&qid=1592729000478&sr=1-1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button className="bookButtonStyle">
-                        BOOK DEPOSITORY
-                      </button>
-                    </a>
+                        <button className="bookButtonStyle">
+                          BOOK DEPOSITORY
+                        </button>
+                      </a>
 
-                    <a
-                      href="https://www.amazon.com/Inspired-INC-Become-Company-Behind-ebook/dp/B07S5Z6TZH/ref=sr_1_1?dchild=1&keywords=inspired+INC&qid=1592729075&sr=8-1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button className="bookButtonStyle">AMAZON</button>
-                    </a>
+                      <a
+                        href="https://www.amazon.com/Inspired-INC-Become-Company-Behind-ebook/dp/B07S5Z6TZH/ref=sr_1_1?dchild=1&keywords=inspired+INC&qid=1592729075&sr=8-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button className="bookButtonStyle">AMAZON</button>
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        class="bookParagraphStyle bookAudioBookStyle"
+                        href={bookPdf}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Audio book supplement
+                      </a>
+                    </div>
                   </div>
-                  <div style={{ marginBottom: "30px" }}>
-                    <a
-                      class="bookParagraphStyle bookAudioBookStyle"
-                      href={bookPdf}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Audio book supplement
-                    </a>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          </Container>
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </div>
         <Footer pageType={pageType} />
       </div>
