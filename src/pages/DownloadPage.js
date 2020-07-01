@@ -19,7 +19,7 @@ class DownloadPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      csvData: "",
+      csvData: "none",
     };
   }
   render() {
