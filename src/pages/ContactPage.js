@@ -86,107 +86,107 @@ class ContactPage extends Component {
                       height: "100%",
                     }}
                   >
-                    <div class="ContactLogoStyle">
-                      <img src={ContactLogo} alt="logo" class="Logo1Style" />
-                    </div>
-                    <div
-                      style={{
-                        color: "rgb(255,255,255)",
-                        marginLeft: "20px",
-                        marginRight: "20px",
-                      }}
-                    >
-                      <p class="ContactTextFont">
-                        We’d love to hear from you Email:&nbsp;
-                        <a
-                          class="contactUnderlineTextStyle"
-                          href="mailto:hello@inspiredcompanies.global"
-                          rel="noopener noreferrer"
-                        >
-                          hello@inspiredcompanies.global
-                        </a>
-                      </p>
-                      <p
-                        style={{ marginBottom: "2.5rem" }}
-                        class="ContactTextFont"
-                      >
-                        We have a globally networked team to support your
-                        journey to becoming an Inspired Company -{" "}
-                        <a
-                          class="contactUnderlineTextStyle"
-                          href="mailto:donette@inspiredcompanies.global"
-                          rel="noopener noreferrer"
-                        >
-                          Advisory
-                        </a>
-                      </p>
-                      <p class="ContactTextFont">
-                        Our message has a way of cutting through. Contact us for{" "}
-                        <a
-                          class="contactUnderlineTextStyle"
-                          href="mailto:donette@inspiredcompanies.global"
-                          rel="noopener noreferrer"
-                        >
-                          speaking engagements.
-                        </a>
-                      </p>
-                      <p
-                        class="ContactTextFont"
+                    <div>
+                      <div class="ContactLogoStyle">
+                        <img src={ContactLogo} alt="logo" class="Logo1Style" />
+                      </div>
+                      <div
                         style={{
-                          marginBottom: "10px",
-                          padding: "0px 30px",
+                          color: "rgb(255,255,255)",
+                          marginLeft: "20px",
+                          marginRight: "20px",
                         }}
                       >
-                        Join the community / sign up to receive updates and
-                        insights.
-                      </p>
-                    </div>
-
-                    <div
-                      style={{
-                        minWidth: "260px",
-                        width: "80%",
-                        display: "flex",
-                        flexDirection: "row",
-                        margin: "0px 40px 5px 40px",
-                      }}
-                    >
-                      <div class="contactInputDivStyle">
-                        <input
+                        <p class="ContactTextFont">
+                          We’d love to hear from you Email:&nbsp;
+                          <a
+                            class="contactUnderlineTextStyle"
+                            href="mailto:hello@inspiredcompanies.global"
+                            rel="noopener noreferrer"
+                          >
+                            hello@inspiredcompanies.global
+                          </a>
+                        </p>
+                        <p
+                          style={{ marginBottom: "1.5rem" }}
+                          class="ContactTextFont"
+                        >
+                          We have a globally networked team to support your
+                          journey to becoming an Inspired Company -{" "}
+                          <a
+                            class="contactUnderlineTextStyle"
+                            href="mailto:donette@inspiredcompanies.global"
+                            rel="noopener noreferrer"
+                          >
+                            Advisory
+                          </a>
+                        </p>
+                        <p class="ContactTextFont">
+                          Our message has a way of cutting through. Contact us
+                          for{" "}
+                          <a
+                            class="contactUnderlineTextStyle"
+                            href="mailto:donette@inspiredcompanies.global"
+                            rel="noopener noreferrer"
+                          >
+                            speaking engagements.
+                          </a>
+                        </p>
+                        <p
+                          class="ContactTextFont"
                           style={{
-                            border: "none",
-                            color: "rgb(40, 184, 211)",
-                            padding: "20px 15px",
-                            width: "100%",
-                            height: "100%",
-                            fontSize: "16px",
+                            marginBottom: "10px",
+                            padding: "0px 30px",
                           }}
-                          id="Email"
-                          type="text"
-                          value={this.state.emailAddress}
-                          onBlur={this.onBlurEvent}
-                          onFocus={this.onFocusEvent}
-                          onChange={this.addressChange}
-                        />
+                        >
+                          Join the community / sign up to receive updates and
+                          insights.
+                        </p>
                       </div>
-                      <div class="contantBtnStyle" onClick={this.savemaildata}>
-                        <i
-                          class="fa fa-angle-right"
-                          style={{ color: "rgb(255,255,255)" }}
-                          aria-hidden="true"
-                        ></i>
+
+                      <div
+                        style={{
+                          minWidth: "260px",
+                          width: "80%",
+                          display: "flex",
+                          flexDirection: "row",
+                          margin: "0px 40px 5px 40px",
+                        }}
+                      >
+                        <div class="contactInputDivStyle">
+                          <input
+                            style={{
+                              border: "none",
+                              color: "rgb(40, 184, 211)",
+                              padding: "20px 15px",
+                              width: "100%",
+                              height: "100%",
+                              fontSize: "16px",
+                            }}
+                            id="Email"
+                            type="text"
+                            value={this.state.emailAddress}
+                            onBlur={this.onBlurEvent}
+                            onFocus={this.onFocusEvent}
+                            onChange={this.addressChange}
+                          />
+                        </div>
+                        <div
+                          class="contantBtnStyle"
+                          onClick={this.savemaildata}
+                        >
+                          <i
+                            class="fa fa-angle-right"
+                            style={{ color: "rgb(255,255,255)" }}
+                            aria-hidden="true"
+                          ></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div
-                    style={{
-                      margin: "0px 45px 10px 45px",
-                      fontSize: "16px",
-                      color: "rgb(3, 51, 76)",
-                    }}
-                  >
-                    {this.state.emailStatus}
+                    <div class="EmailConfirmStyle">
+                      {this.state.emailStatus}
+                    </div>
                   </div>
                 </Col>
               </Row>

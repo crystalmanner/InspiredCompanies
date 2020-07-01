@@ -48,10 +48,7 @@ class BookPage extends Component {
                   <div class="BookTextStyle">
                     <div>
                       <p style={{ fontSize: "25px" }}>INSPIRED INC.</p>
-                      <p
-                        class="bookParagraphStyle"
-                        style={{ fontSize: "13px" }}
-                      >
+                      <p class="bookParagraphStyle">
                         by LISA MacCALLUM, EMILY BREW, NICOLE HOWSON
                       </p>
                       <p class="bookParagraphStyle">

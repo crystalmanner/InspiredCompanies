@@ -109,12 +109,7 @@ html {
   text-align: center;
 }
 .Logo1Style {
-  width: 100%;
-}
-@media (max-width: 575px) {
-  .Logo1Style {
-    width: 100%;
-  }
+  width: 85%;
 }
 
 @keyframes float {
@@ -490,7 +485,7 @@ input:focus {
 
 .bookParagraphStyle {
   font-family: "Circular Pro Medium";
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 1.5rem;
   line-height: 25px;
 }
@@ -560,7 +555,7 @@ input:focus {
   height: 100%;
   justify-content: center;
   align-items: center;
-  padding: 90px 5%;
+  padding: 40px 5%;
 
   display: flex;
 }
@@ -570,7 +565,7 @@ input:focus {
   height: 100%;
   justify-content: center;
   align-items: center;
-  padding: 90px 0px;
+  padding: 40px 0px;
   margin-left: -45px;
 
   display: flex;
@@ -581,7 +576,7 @@ input:focus {
   height: 100%;
   justify-content: center;
   align-items: center;
-  padding: 90px 5%;
+  padding: 40px 5%;
 
   display: flex;
 }
@@ -602,6 +597,11 @@ input:focus {
 
 .ContactLogoStyle {
   margin-bottom: 20px;
+}
+
+.EmailConfirmStyle {
+  font-size: 14px;
+  color: rgb(3, 51, 76);
 }
 @media (max-width: 767px) {
   .footerFontSize {
@@ -648,23 +648,42 @@ input:focus {
 
   .justifySectionForBook {
     margin-left: 0px;
-    padding: 50px 0px;
+    padding: 25px 0px;
+  }
+
+  .justifySectionForContact {
+    padding: 25px 5%;
   }
   .justifySectionForAbout {
-    padding: 50px 5%;
+    padding: 25px 5%;
   }
   .ContactColStyle {
     min-width: auto;
     max-width: 385px;
   }
   .ContactTextFont {
-    font-size: 17px;
+    font-size: 16px;
   }
   .ContactRowStyle {
     justify-content: center;
   }
   .ContactLogoStyle {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+  }
+  nav {
+    height: 60px;
+  }
+  .HomeFooterDiv,
+  .AboutFooterDiv,
+  .BookFooterDiv,
+  .ContactFooterDiv {
+    height: 100px;
+  }
+
+  .HomeSection,
+  .AboutSection,
+  .ContactSection {
+    height: calc(100vh - 160px);
   }
 }
 @media (max-width: 575px) {
@@ -695,14 +714,31 @@ input:focus {
   .BookContainerStyle {
     max-width: 780px;
     max-height: 510px;
+    min-height: 490px;
   }
   .ContactContainerStyle {
     max-height: 510px;
+    min-height: 490px;
   }
 }
 
-@media (max-width: 359px) {
+@media (max-width: 415px) {
   .BookTextStyle {
     min-width: 100%;
+  }
+  .bookParagraphStyle {
+    font-size: 12px;
+  }
+}
+
+@media (max-height: 764px) {
+  .BookSection {
+    height: auto;
+  }
+}
+
+@media (max-height: 726px) {
+  .ContactSection {
+    height: auto;
   }
 }
