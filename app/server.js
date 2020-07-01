@@ -32,7 +32,7 @@ app.post("/email", (req, res) => {
   });
 });
 
-app.get("/download", function (req, res) {
+app.get("/downloadcsv", function (req, res) {
   const file = `${__dirname}/data/email.csv`;
   console.log(file);
   res.download(file); // Set disposition and send it.

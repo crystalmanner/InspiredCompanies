@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import BookPage from "./pages/BookPage";
 import ContactPage from "./pages/ContactPage";
 import LandingPage from "./pages/LandingPage";
+import DownloadPage from "./pages/DownloadPage";
 import "./App.css";
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
                   <Route exact path="/about" component={AboutPage} />
                   <Route exact path="/the-book" component={BookPage} />
                   <Route exact path="/contact" component={ContactPage} />
+                  <Route exact path="/download" component={DownloadPage} />
                 </Switch>
               </section>
             </CSSTransition>
