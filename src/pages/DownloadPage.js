@@ -5,7 +5,7 @@ class DownloadPage extends Component {
   componentDidMount() {
     console.log("downloadpage");
     http
-      .get("/downloadcsv")
+      .post("/api/downloadcsv")
       .then((res) => {
         console.log(res.data);
         if (res.data !== null) {
