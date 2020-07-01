@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "../build")));
 
-app.post("/email", (req, res) => {
+app.get("/emaildata", (req, res) => {
   var fs = require("fs");
   fs.stat("./data/email.csv", function (err, stat) {
     var csv = req.body.emailData + "\r\n";
@@ -34,7 +34,6 @@ app.post("/email", (req, res) => {
 
 app.get("/downloadcsv", function (req, res) {
   const file = `${__dirname}/data/email.csv`;
-  console.log(file);
   res.download(file); // Set disposition and send it.
 });
 

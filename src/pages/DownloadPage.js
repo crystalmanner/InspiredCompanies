@@ -3,11 +3,12 @@ import http from "../http-common";
 import { CSVLink } from "react-csv";
 class DownloadPage extends Component {
   componentDidMount() {
+    console.log("downloadpage");
     http
       .get("/downloadcsv")
       .then((res) => {
+        console.log(res.data);
         if (res.data !== null) {
-          console.log(res.data);
           this.setState({ csvData: res.data });
         }
       })
@@ -25,7 +26,7 @@ class DownloadPage extends Component {
     return (
       <div>
         <CSVLink data={this.state.csvData} filename="email_info.csv">
-          Download
+          Download csv file
         </CSVLink>
       </div>
     );

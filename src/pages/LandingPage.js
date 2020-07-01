@@ -28,6 +28,7 @@ class LandingPage extends Component {
               style={{
                 color: "rgb(3, 51, 76)",
                 textDecoration: "none",
+                lineHeight: "65px",
               }}
             >
               <label
