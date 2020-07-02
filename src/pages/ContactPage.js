@@ -36,7 +36,7 @@ class ContactPage extends Component {
       this.setState({ emailStatus: "Please enter a valid email address" });
     } else {
       http
-        .post("/api/emaildata", {
+        .post("/emaildata", {
           emailData: this.state.emailAddress,
         })
         .then((res) => {

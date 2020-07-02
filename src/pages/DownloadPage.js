@@ -3,9 +3,8 @@ import http from "../http-common";
 import { CSVLink } from "react-csv";
 class DownloadPage extends Component {
   componentDidMount() {
-    console.log("downloadpage");
     http
-      .post("/api/downloadcsv")
+      .post("/downloadcsv")
       .then((res) => {
         console.log(res.data);
         if (res.data !== null) {
