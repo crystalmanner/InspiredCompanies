@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import HomePage from "./pages/HomePage";
@@ -13,12 +13,11 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <Route
-        render={({ location }) => (
+      <HashRouter>
           <TransitionGroup className="transition-group">
-            <CSSTransition key={location.key} timeout={600} classNames="fade">
+            <CSSTransition timeout={600} classNames="fade">
               <section className="route-section">
-                <Switch location={location}>
+                <Switch>
                   <Route exact path="/" component={LandingPage} />
                   <Route exact path="/home" component={HomePage} />
                   <Route exact path="/about" component={AboutPage} />
@@ -29,8 +28,7 @@ class App extends Component {
               </section>
             </CSSTransition>
           </TransitionGroup>
-        )}
-      />
+      </HashRouter>
     );
   }
 }
