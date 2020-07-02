@@ -5,6 +5,7 @@ module.exports = (app) => {
   router.post("/emaildata", (req, res) => {
     var fs = require("fs");
     fs.stat("./data/email.csv", function (err, stat) {
+      console.log(req.body.emailData);
       var csv = req.body.emailData + "\r\n";
       fs.appendFile("./data/email.csv", csv, function (err) {
         if (err) throw err;
