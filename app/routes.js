@@ -14,6 +14,10 @@ module.exports = (app) => {
     });
   });
 
+  router.get("/emaildata", (req, res) => {
+    res.send("get success!")
+  });
+
   router.post("/downloadcsv", function (req, res) {
     const file = `${__dirname}/data/email.csv`;
     console.log(file);

@@ -11,7 +11,7 @@ const app = express();
 // };
 
 app.use(cors());
-// app.options("*", cors()); // include before other routes for preflight checks
+app.options("*", cors()); // include before other routes for preflight checks
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
