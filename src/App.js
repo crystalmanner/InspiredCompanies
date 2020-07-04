@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import HomePage from "./pages/HomePage";
@@ -13,24 +13,30 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <Route
-        render={({ location }) => (
-          <TransitionGroup className="transition-group">
-            <CSSTransition key={location.key} timeout={600} classNames="fade">
-              <section className="route-section">
-                <Switch location={location}>
-                  <Route exact path="/" component={LandingPage} />
-                  <Route exact path="/home" component={HomePage} />
-                  <Route exact path="/about" component={AboutPage} />
-                  <Route exact path="/the-book" component={BookPage} />
-                  <Route exact path="/contact" component={ContactPage} />
-                  <Route exact path="/download" component={DownloadPage} />
-                </Switch>
-              </section>
-            </CSSTransition>
-          </TransitionGroup>
-        )}
-      />
+      <HashRouter>
+        <Route
+          render={({ location }) => (
+            <TransitionGroup className="transition-group">
+              <CSSTransition
+                key={location.pathname}
+                timeout={600}
+                classNames="fade"
+              >
+                <section className="route-section">
+                  <Switch location={location}>
+                    <Route exact path="/" component={LandingPage} />
+                    <Route exact path="/home" component={HomePage} />
+                    <Route exact path="/about" component={AboutPage} />
+                    <Route exact path="/the-book" component={BookPage} />
+                    <Route exact path="/contact" component={ContactPage} />
+                    <Route exact path="/download" component={DownloadPage} />
+                  </Switch>
+                </section>
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
+      </HashRouter>
     );
   }
 }
